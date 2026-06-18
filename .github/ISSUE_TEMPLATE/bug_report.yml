@@ -1,0 +1,72 @@
+name: Bug Report
+description: Something in Ceraph is broken or not working as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. For feature requests or general
+        feedback, head to [Discussions](https://github.com/ceraph-dev/community/discussions) instead.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: A clear description of the bug and what you expected instead.
+      placeholder: When I ask my agent to ..., Ceraph does ... but I expected ...
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run `npx @ceraph/react-native-mcp@latest init`
+        2. Ask my agent to ...
+        3. See the error
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where did it run?
+      options:
+        - iOS real device
+        - iOS Simulator
+    validations:
+      required: true
+  - type: dropdown
+    id: client
+    attributes:
+      label: MCP client
+      options:
+        - Claude Code
+        - Cursor
+        - Codex
+        - VS Code
+        - Windsurf
+        - Antigravity
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Ceraph version
+      description: Shown in your MCP client's server info. Leave blank if unsure.
+      placeholder: 0.4.4
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: RN / Expo version, Node version, macOS version, device + iOS version.
+      placeholder: |
+        - Expo SDK: 52  (or React Native: 0.76)
+        - Node: 20.x
+        - macOS: 15.x
+        - Device: iPhone 14, iOS 18.2
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Paste any relevant error output or screenshots.
+      render: shell
