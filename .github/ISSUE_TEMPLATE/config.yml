@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💡 Feature request
+    url: https://github.com/ceraph-dev/community/discussions/new?category=ideas
+    about: Suggest a new feature or improvement — these live in Discussions, not Issues.
+  - name: 💬 Feedback & questions
+    url: https://github.com/ceraph-dev/community/discussions
+    about: Share feedback, ask a question, or start a conversation with the community.
+  - name: 🔒 Report a security vulnerability
+    url: mailto:security@ceraph.dev
+    about: Please report security issues privately by email — do not open a public issue.
