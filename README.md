@@ -24,4 +24,4 @@ Ceraph installs as an MCP server, so any AI coding agent can drive your app — 
 
 ## Security
 
-Please do not report security vulnerabilities through public issues. See [SECURITY.md](SECURITY.md) and email [security@ceraph.dev](mailto:security@ceraph.dev).
+Please do not report security vulnerabilities through public issues. Please email [security@ceraph.dev](mailto:security@ceraph.dev).
